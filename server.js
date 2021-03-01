@@ -100,7 +100,7 @@ router.route('/movies')
     //.post(authJwtController.isAuthenticated, function (req, res) {
     .get(function (req, res) {
             //res.status(401).send({success: false, msg: 'Authentication failed.'});
-            res.status(200).send({status: 200, success: true, msg: 'Movie Saved.', headers: req.headers, query: req.query, env: process.env.UNIQUE_KEY});
+            res.status(200).send({status: 200, success: true, msg: 'GET Movies.', headers: req.headers, query: req.query, env: process.env.UNIQUE_KEY});
 
         }
     );
@@ -118,7 +118,7 @@ router.route('/movies')
     .put(authJwtController.isAuthenticated, function (req, res) {
     //.post(function (req, res) {
             //res.status(401).send({success: false, msg: 'Authentication failed.'});
-            res.status(200).send({status: 200, success: true, msg: 'Movie Saved.', headers: req.headers, query: req.query, env: process.env.UNIQUE_KEY});
+            res.status(200).send({status: 200, success: true, msg: 'Movie Updated.', headers: req.headers, query: req.query, env: process.env.UNIQUE_KEY});
 
         }
     );
@@ -127,7 +127,7 @@ router.route('/movies')
     .delete(authJwtController.isAuthenticated, function (req, res) {
     //.post(function (req, res) {
             //res.status(401).send({success: false, msg: 'Authentication failed.'});
-            res.status(200).send({status: 200, success: true, msg: 'Movie Saved.', headers: req.headers, query: req.query, env: process.env.UNIQUE_KEY});
+            res.status(200).send({status: 200, success: true, msg: 'Movie Deleted.', headers: req.headers, query: req.query, env: process.env.UNIQUE_KEY});
 
         }
     );
